@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodecaedro Interativo no Espaço</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- O container onde o canvas 3D será renderizado -->
+    <div id="canvas-container"></div>
+
+    <!-- Instruções para o usuário -->
+    <div id="ui-instructions">
+        Clique e arraste o Dodecaedro para movê-lo pelo espaço.
+    </div>
+
+    <!-- Importando Three.js (Biblioteca 3D) via CDN -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+
+    <!-- Nosso script principal (Módulo) -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
